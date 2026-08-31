@@ -1,0 +1,12 @@
+# HELP node_network_mtu_bytes mtu_bytes value of /sys/class/net/<iface>.
+# TYPE node_network_mtu_bytes gauge
+node_network_mtu_bytes{device="lo"} 65536
+node_network_mtu_bytes{device="virbr0"} 1500
+# HELP node_cpu_seconds_total Seconds the CPUs spent in each mode.
+# TYPE node_cpu_seconds_total counter
+node_cpu_seconds_total{cpu="0",mode="iowait"} 0.0001
+node_cpu_seconds_total{cpu="0",mode="system"} 0.0002
+node_cpu_seconds_total{cpu="0",mode="user"} 0.0003
+node_cpu_seconds_total{cpu="1",mode="iowait"} 0.0004
+node_cpu_seconds_total{cpu="1",mode="system"} 0.0005
+node_cpu_seconds_total{cpu="1",mode="user"} 0.0006
