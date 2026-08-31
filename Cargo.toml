@@ -1,0 +1,50 @@
+[package]
+name = "rs-pmtxt2merged"
+version = "0.1.0"
+edition = "2024"
+
+exclude = [
+]
+
+[lints.rust]
+unsafe_code = "forbid"
+
+[lints.clippy]
+unwrap_used = "forbid"
+expect_used = "forbid"
+panic = "forbid"
+
+
+[profile.release-wasi]
+inherits = "release"
+lto = true
+strip = true
+opt-level = 's'
+codegen-units = 1
+
+[[bin]]
+name = "pmtxt2merged"
+
+[dependencies.prometheus]
+version = "0.14"
+default-features = false
+features = [
+]
+
+[dependencies.prometheus-parse]
+version = "0.2"
+default-features = false
+features = [
+]
+
+[dependencies.chrono]
+version = "0.4"
+default-features = false
+features = [
+]
+
+[dependencies.protobuf]
+version = "3.7"
+default-features = false
+features = [
+]
