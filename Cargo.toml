@@ -3,6 +3,13 @@ name = "rs-pmtxt2merged"
 version = "0.1.0"
 edition = "2024"
 
+description = "Merge Prometheus metrics in text format"
+license = "Apache-2.0"
+repository = "https://github.com/takanoriyanagitani/rs-pmtxt2merged"
+homepage = "https://github.com/takanoriyanagitani/rs-pmtxt2merged"
+documentation = "https://docs.rs/rs-pmtxt2merged/latest"
+keywords = ["prometheus", "metrics", "merge"]
+
 exclude = [
 ]
 
